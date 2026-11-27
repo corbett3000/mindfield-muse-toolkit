@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-27",
+  "route": "/training",
+  "sourceRevision": "562b27ba7e7f5fe62230459ffeebabb2428aa31b",
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "method": "Actual frontend in existing isolated fixture harness, synthetic session views; current engine phase list; no room runtime or recording. Documentation banner added before capture.",
+  "shots": [
+    {
+      "file": "01-training-setup.png",
+      "phase": "Setup and journey outline",
+      "kind": "full page",
+      "width": 1440,
+      "height": 2343,
+      "sha256": "3bff643f800fda5350127129ec51375eed888b437092d977b4f1b47eeb9c5510",
+      "bytes": 853559
+    },
+    {
+      "file": "02-fit-and-settle.png",
+      "phase": "Fit and settle",
+      "kind": "full page",
+      "width": 1440,
+      "height": 3101,
+      "sha256": "e38e2ef01ade979763bf90f899dff83c1d750aa410cb5b164183a195bc490583",
+      "bytes": 871706
+    },
+    {
+      "file": "03-fit-sensors-detail.png",
+      "phase": "Fit and settle",
+      "kind": "element crop",
+      "width": 1056,
+      "height": 902,
+      "sha256": "79bf8339cad1eb7caca7aa23c03d1383f753ef86f92b428f0e18ff0f92d0203b",
+      "bytes": 172300
+    },
+    {
+      "file": "04-opening-rest.png",
+      "phase": "Baseline",
+      "kind": "viewport",
+      "width": 1440,
+      "height": 1100,
+      "sha256": "00b60901665b7e73c6f0bb431cb20985e579a2a0e629ac5b06d6087591fe4c6e",
+      "bytes": 558283
+    },
+    {
+      "file": "05-silent.png",
+      "phase": "Silent practice",
+      "kind": "viewport",
+      "width": 1440,
+      "height": 1100,
+      "sha256": "10ebf78449293f1c4be174c6089e3122b79050d74cf8adaad1dfcd0a18d79828",
+      "bytes": 644978
+    },
+    {
+      "file": "06-reset1.png",
+      "phase": "Rest and reset",
+      "kind": "viewport",
+      "width": 1440,
+      "height": 1100,
+      "sha256": "00a18b826be923fa2908c080551f9e02d594105e94c730798a22c82163df2652",
+      "bytes": 590229
+    },
+    {
+      "file": "07-guided.png",
+      "phase": "Mantra practice",
+      "kind": "viewport",
+      "width": 1440,
+      "height": 1100,
+      "sha256": "ee7752ddf0c3c89cd4cc4d6a7bda17afb5b22739556c44f42894e7926159fbe8",
+      "bytes": 646817
+    },
+    {
+      "file": "08-reset2.png",
+      "phase": "Movement break",
+      "kind": "viewport",
+      "width": 1440,
+      "height": 1100,
+      "sha256": "4f71c50173dcfd1773b7cdbfde83d8f8e914130e1355fe38182bbe47995f141d",
+      "bytes": 593018
+    },
+    {
+      "file": "09-music.png",
+      "phase": "Practice with music",
+      "kind": "viewport",
+      "width": 1440,
+      "height": 1100,
+      "sha256": "830b9eaf2f53157ad11db1ef04c6c1730d0efb95fe5dd5bbce428c0094b75b31",
+      "bytes": 648491
+    },
+    {
+      "file": "10-maze-break.png",
+      "phase": "Break before the Maze",
+      "kind": "viewport",
+      "width": 1440,
+      "height": 1100,
+      "sha256": "49ee504134684e8eabe340f3de73be59bb0507cbb9f5745d412ef2d82a9d72c8",
+      "bytes": 601077
+    },
+    {
+      "file": "11-game.png",
+      "phase": "Mindfield Maze",
+      "kind": "viewport",
+      "width": 1440,
+      "height": 1100,
+      "sha256": "5c31337c64f8c81b8a9ed5dd8233a79478b0c3fa8e25cbff301cead321d8106e",
+      "bytes": 1573053
+    }
+  ]
+}

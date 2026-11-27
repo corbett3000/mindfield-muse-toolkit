@@ -25,6 +25,25 @@ These synthetic rehearsal previews show the original experience. Visit the
 credited in [asset sources](docs/assets/README.md); this repository contains the
 reusable signal modules, not the full application.
 
+## Training screen walkthrough
+
+[**See every Training step, from setup through the Maze →**](docs/training-walkthrough.md)
+
+The gallery includes 11 screenshots of the actual `/training` interface, using
+synthetic session views and invented names. It shows setup, fit, Baseline, all
+three practices, the intervening breaks and the Maze.
+
+[![Training setup and complete journey sidebar](docs/assets/training/01-training-setup.png)](docs/training-walkthrough.md)
+
+### Headband fit and sensor connections
+
+[![Fit board showing good and poor ear connections, all four sensor lights, headband-off and reconnecting states](docs/assets/training/03-fit-sensors-detail.png)](docs/training-walkthrough.md#fit-test-good-and-poor-sensor-connections)
+
+TP9/TP10 are the ear sensors; AF7/AF8 are forehead sensors. Green pills show
+usable readings at this instant; red dashed pills show unusable readings.
+The ear meters summarize the rolling fit window. These are **synthetic UI
+examples**, not participant data or evidence of hardware validation.
+
 ## Run it
 
 Requires Node.js 22 or newer. There are no third-party dependencies and no build step.
@@ -80,7 +99,7 @@ Do not send untrusted datagrams directly into these APIs without validation.
 
 This edition implements Tier 1 of the toolkit plan. It contains no participant
 recordings, source Git history, private reports, SDK, phone application,
-network receiver, cloud hosting or lighting. Three approved case study graphics
+network receiver, cloud hosting or lighting. Approved case study graphics and synthetic Training screenshots
 are included for documentation. The raw EEG format is documented;
 raw recording and spectral analysis are not implemented here. Full-session scoring
 fixtures and the Mind Field scoring engine are also outside this edition.

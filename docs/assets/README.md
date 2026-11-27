@@ -15,3 +15,11 @@ These illustrate the original experience; the toolkit does not include the full
 application or its presentation renderer. They are not participant recordings or
 validation evidence. No additional reuse license is granted by including them;
 this repository remains private for review with licensing undecided.
+
+## Training screenshots
+
+The owner also requested the `/training` screenshots in [training/](training/).
+These were captured from the real interface using isolated synthetic fixtures,
+not downloaded from the case study. See the [annotated walkthrough](../training-walkthrough.md)
+and [capture manifest](training/manifest.json) for method, source revision,
+dimensions and checksums. No participants or saved sessions were used.

@@ -7,9 +7,9 @@ and third-party runtime dependencies unless explicitly requested otherwise.
 This repository is private for review; public visibility, an open-source license
 and npm publication require the owner's explicit instruction. Use synthetic data
 only. Do not copy SDKs, recordings, reports, credentials or private source
-project documents into this repository. The owner approved the three case study
-graphics documented in docs/assets/README.md; other media requires an explicit
-request. Keep source attribution with any approved graphics.
+project documents into this repository. The owner approved the case study graphics and synthetic Training screenshots
+documented in docs/assets/README.md and docs/training-walkthrough.md; other media
+requires an explicit request. Keep source attribution with any approved graphics.
 
 The extraction manifest hashes the initial source copies. If behavior changes,
 document the divergence and add a regression test; preserve the initial provenance.
