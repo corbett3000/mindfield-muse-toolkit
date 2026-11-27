@@ -1,5 +1,9 @@
 # Mind Field Muse Toolkit
 
+[**Read the Mind Field case study →**](https://corbett.vc/mindfield/)
+
+[![Mind Field temple gate with red maple trees and a red ensō](docs/assets/temple-gate.webp)](https://corbett.vc/mindfield/)
+
 Four small JavaScript modules for developers building experimental EEG interfaces:
 sensor validity, rolling headset-fit checks, packet-loss accounting and an adaptive
 game signal. Extracted from Mind Field, a local shared meditation experience.
@@ -9,6 +13,17 @@ This is not the full Mind Field app, a Muse driver, or a medical device. The
 thresholds are provisional engineering choices, not validated clinical criteria.
 Muse is a trademark of Interaxon; this project is not affiliated with or endorsed
 by Interaxon.
+
+## The experience behind the toolkit
+
+| Silent practice | Mindfield Maze |
+| --- | --- |
+| [![Silent-practice wall with eight numbered seats during a synthetic rehearsal](docs/assets/wall-poster.jpg)](https://corbett.vc/mindfield/) | [![Eight monk characters in the Mindfield Maze during a synthetic rehearsal](docs/assets/maze-poster.jpg)](https://corbett.vc/mindfield/) |
+
+These synthetic rehearsal previews show the original experience. Visit the
+[case study](https://corbett.vc/mindfield/) for the story and videos. Graphics are
+credited in [asset sources](docs/assets/README.md); this repository contains the
+reusable signal modules, not the full application.
 
 ## Run it
 
@@ -64,8 +79,9 @@ Do not send untrusted datagrams directly into these APIs without validation.
 ## Scope and limitations
 
 This edition implements Tier 1 of the toolkit plan. It contains no participant
-recordings, source Git history, private reports, media, SDK, phone application,
-network receiver, cloud hosting or lighting. The raw EEG format is documented;
+recordings, source Git history, private reports, SDK, phone application,
+network receiver, cloud hosting or lighting. Three approved case study graphics
+are included for documentation. The raw EEG format is documented;
 raw recording and spectral analysis are not implemented here. Full-session scoring
 fixtures and the Mind Field scoring engine are also outside this edition.
 

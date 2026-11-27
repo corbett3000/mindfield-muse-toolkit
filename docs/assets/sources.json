@@ -1,0 +1,21 @@
+{
+  "retrieved": "2026-11-27",
+  "caseStudy": "https://corbett.vc/mindfield/",
+  "assets": [
+    {
+      "file": "temple-gate.webp",
+      "source": "https://corbett.vc/mindfield/img/temple-gate.webp",
+      "sha256": "c6317573904267964a99c1af3ba695f9d2f6e4e8751fed6b78989fa5f709be9c"
+    },
+    {
+      "file": "maze-poster.jpg",
+      "source": "https://corbett.vc/mindfield/media/maze-poster.jpg",
+      "sha256": "582764d6aa9e3e9d8fcec55582dd307df36df4aa99d21ade3733ad03f45cb5e3"
+    },
+    {
+      "file": "wall-poster.jpg",
+      "source": "https://corbett.vc/mindfield/media/wall-poster.jpg",
+      "sha256": "704388877e14e9d856babe1414029f8abbd61a453ab2a0197887d8c024b66bd1"
+    }
+  ]
+}
