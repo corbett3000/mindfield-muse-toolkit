@@ -1,0 +1,27 @@
+{
+  "sourceRevision": "562b27ba7e7f5fe62230459ffeebabb2428aa31b",
+  "date": "2026-11-27",
+  "modules": [
+    {
+      "source": "services/training/sensor-validity.mjs",
+      "destination": "src/sensor-validity.mjs",
+      "sha256": "0e185a00c0de57a4fc78296442a704f4ba7fb71fbe7f61d5bd4ff470368b38ed"
+    },
+    {
+      "source": "services/training/fit-window.mjs",
+      "destination": "src/fit-window.mjs",
+      "sha256": "6ce6a500b426a90db80078795c40c76f8fb576e3e9d249bdec386238daadecfd"
+    },
+    {
+      "source": "services/training/seq-tracker.mjs",
+      "destination": "src/seq-tracker.mjs",
+      "sha256": "feabc4747b8a700e11a69503e706834a73b53200b8ae992c78ec403acc4cb3c2"
+    },
+    {
+      "source": "services/training/game-signal.mjs",
+      "destination": "src/game-signal.mjs",
+      "sha256": "8d2ee4b26f5f75f44ca3d2aa508175520056d4ed3a55df8153c0ad7cbc517a29"
+    }
+  ],
+  "note": "Source modules copied unchanged. No source repository history or participant data included."
+}

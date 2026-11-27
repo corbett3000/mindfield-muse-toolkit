@@ -1,0 +1,30 @@
+{
+  "name": "mindfield-muse-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Small deterministic building blocks for experimental EEG interfaces",
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./sensor-validity": "./src/sensor-validity.mjs",
+    "./fit-window": "./src/fit-window.mjs",
+    "./seq-tracker": "./src/seq-tracker.mjs",
+    "./game-signal": "./src/game-signal.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node examples/synthetic-session.mjs",
+    "check": "npm test && npm run demo"
+  },
+  "files": [
+    "src/",
+    "docs/",
+    "FIELD-NOTES.md",
+    "README.md",
+    "LICENSE"
+  ]
+}
