@@ -8,7 +8,8 @@ Four small JavaScript modules for developers building experimental EEG interface
 sensor validity, rolling headset-fit checks, packet-loss accounting and an adaptive
 game signal. Extracted from Mind Field, a local shared meditation experience.
 
-**Private review edition — 0.1.0.** No open-source license has been selected.
+**Private review edition — 0.1.0.** Code and text documentation are licensed under
+[Apache License 2.0](LICENSE), matching [OpenDNA](https://github.com/corbett3000/OpenDNA/blob/main/LICENSE).
 This is not the full Mind Field app, a Muse driver, or a medical device. The
 thresholds are provisional engineering choices, not validated clinical criteria.
 Muse is a trademark of Interaxon; this project is not affiliated with or endorsed
@@ -114,3 +115,11 @@ Tests establish deterministic software behavior on synthetic inputs. They do not
 establish hardware compatibility, clinical effectiveness or multi-person reliability.
 Original source comments refer to historical bench work; they are not claims about
 the current extent of validation. See [field notes](FIELD-NOTES.md).
+
+## License
+
+Copyright 2026 Peter Corbett. Code and text documentation are licensed under the
+[Apache License, Version 2.0](LICENSE). Case study artwork and screenshots retain
+the separate terms in [asset sources](docs/assets/README.md). Third-party trademarks
+are not licensed by this project. The repository remains private for review, and
+`private: true` in the package metadata continues to prevent npm publication.

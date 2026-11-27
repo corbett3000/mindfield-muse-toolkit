@@ -6,10 +6,16 @@ make them usable without the original application. The fit regression file retai
 the source's self-contained fit cases; its application-specific rehearsal tail was
 replaced by the standalone synthetic integration tests.
 
+## License selected — November 27, 2026
+
+The owner selected the same license as [OpenDNA](https://github.com/corbett3000/OpenDNA/blob/main/LICENSE):
+Apache License 2.0, with Copyright 2026 Peter Corbett. `LICENSE` copies that license
+text and `package.json` uses `Apache-2.0`. Code and text documentation are covered;
+[graphics retain their separate terms](assets/README.md). The repository remains
+private, and `private: true` continues to prevent npm publication.
+
 ## Before a public release
 
-- Select a code license and copyright attribution. `LICENSE` currently reserves
-  rights and `package.json` uses `UNLICENSED` and `private: true`.
 - Decide contribution/support expectations and a security-reporting contact.
 - Review the API and field notes, especially provisional validity thresholds,
   stale quality flags, input validation responsibilities and evidence limits.

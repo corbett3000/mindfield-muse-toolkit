@@ -13,8 +13,9 @@ copies of the site assets; exact source URLs and SHA-256 hashes are in
 
 These illustrate the original experience; the toolkit does not include the full
 application or its presentation renderer. They are not participant recordings or
-validation evidence. No additional reuse license is granted by including them;
-this repository remains private for review with licensing undecided.
+validation evidence. These graphics and the Training screenshots below are not
+covered by the Apache-2.0 license for code and text documentation. No additional
+reuse license is granted by their inclusion. The repository remains private for review.
 
 ## Training screenshots
 
