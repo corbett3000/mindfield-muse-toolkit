@@ -2,7 +2,7 @@
   "name": "mindfield-muse-toolkit",
   "version": "0.1.0",
   "private": true,
-  "description": "Small deterministic building blocks for experimental EEG interfaces",
+  "description": "JavaScript tools for Muse EEG data quality, headband fit checks, OSC packet-loss tracking and experimental neurofeedback games.",
   "type": "module",
   "license": "Apache-2.0",
   "engines": {
@@ -26,5 +26,21 @@
     "FIELD-NOTES.md",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "keywords": [
+    "eeg",
+    "muse",
+    "javascript",
+    "neurofeedback",
+    "signal-processing",
+    "osc",
+    "biosignals",
+    "packet-loss",
+    "synthetic-data"
+  ],
+  "homepage": "https://corbett.vc/mindfield/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corbett3000/mindfield-muse-toolkit.git"
+  }
 }

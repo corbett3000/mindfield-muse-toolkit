@@ -1,51 +1,23 @@
-# Mind Field Muse Toolkit
+# Mind Field Muse Toolkit: JavaScript EEG Tools
 
 [**Read the Mind Field case study →**](https://corbett.vc/mindfield/)
 
-[![Mind Field temple gate with red maple trees and a red ensō](docs/assets/temple-gate.webp)](https://corbett.vc/mindfield/)
+JavaScript tools for Muse EEG data quality, headband fit checks, OSC packet-loss
+tracking and experimental neurofeedback games. Four small, dependency-free modules
+extracted from Mind Field, a local shared meditation experience.
 
-Four small JavaScript modules for developers building experimental EEG interfaces:
-sensor validity, rolling headset-fit checks, packet-loss accounting and an adaptive
-game signal. Extracted from Mind Field, a local shared meditation experience.
+Use them to flag stale or poor-contact sensor readings, summarize fit over time,
+track missing packets, and turn a usable EEG-derived value into game movement.
+Synthetic EEG test data lets you try the toolkit without a headset.
 
-**Private review edition — 0.1.0.** Code and text documentation are licensed under
+**Version 0.1.0 · Node.js 22+ · No runtime dependencies.** Code and text documentation are licensed under
 [Apache License 2.0](LICENSE), matching [OpenDNA](https://github.com/corbett3000/OpenDNA/blob/main/LICENSE).
 This is not the full Mind Field app, a Muse driver, or a medical device. The
 thresholds are provisional engineering choices, not validated clinical criteria.
 Muse is a trademark of Interaxon; this project is not affiliated with or endorsed
 by Interaxon.
 
-## The experience behind the toolkit
-
-| Silent practice | Mindfield Maze |
-| --- | --- |
-| [![Silent-practice wall with eight numbered seats during a synthetic rehearsal](docs/assets/wall-poster.jpg)](https://corbett.vc/mindfield/) | [![Eight monk characters in the Mindfield Maze during a synthetic rehearsal](docs/assets/maze-poster.jpg)](https://corbett.vc/mindfield/) |
-
-These synthetic rehearsal previews show the original experience. Visit the
-[case study](https://corbett.vc/mindfield/) for the story and videos. Graphics are
-credited in [asset sources](docs/assets/README.md); this repository contains the
-reusable signal modules, not the full application.
-
-## Training screen walkthrough
-
-[**See every Training step, from setup through the Maze →**](docs/training-walkthrough.md)
-
-The gallery includes 11 screenshots of the actual `/training` interface, using
-synthetic session views and invented names. It shows setup, fit, Baseline, all
-three practices, the intervening breaks and the Maze.
-
-[![Training setup and complete journey sidebar](docs/assets/training/01-training-setup.png)](docs/training-walkthrough.md)
-
-### Headband fit and sensor connections
-
-[![Fit board showing good and poor ear connections, all four sensor lights, headband-off and reconnecting states](docs/assets/training/03-fit-sensors-detail.png)](docs/training-walkthrough.md#fit-test-good-and-poor-sensor-connections)
-
-TP9/TP10 are the ear sensors; AF7/AF8 are forehead sensors. Green pills show
-usable readings at this instant; red dashed pills show unusable readings.
-The ear meters summarize the rolling fit window. These are **synthetic UI
-examples**, not participant data or evidence of hardware validation.
-
-## Run it
+## Quick start
 
 Requires Node.js 22 or newer. There are no third-party dependencies and no build step.
 
@@ -58,7 +30,7 @@ npm run demo
 
 The demo generates an artificial 30-second stream in memory and prints fit and game
 state. It needs no headset, credentials, network connection, clock or local files.
-GitHub access is required only to clone this private repository.
+An internet connection is needed to clone the repository; the demo runs offline.
 
 ```js
 import { createSensorValidity, createFitWindow } from './src/index.mjs';
@@ -88,13 +60,58 @@ Modules use standard ES modules, accept caller-supplied time and perform no I/O.
 The caller validates input, decodes OSC, identifies each headset and owns state.
 Do not send untrusted datagrams directly into these APIs without validation.
 
+## Muse EEG input and compatibility
+
+The sensor-validity module expects decoded JavaScript values in the
+[Mind Field OSC message format](docs/message-format.md), including sensor quality
+and derived EEG bands for TP9, AF7, AF8 and TP10. Adapt your data source to that
+format and keep separate state for each headset. This repository does not connect
+to a Muse headband over Bluetooth, provide a Muse SDK, or receive OSC packets.
+
+The sequence tracker and adaptive game signal can also be used independently.
+See the [API reference](docs/api.md) for input units and the
+[synthetic fixtures](fixtures/README.md) for packet gaps, poor contact, stale data
+and reconnect examples. Hardware compatibility is not established by these tests.
+
+## The experience behind the toolkit
+
+[![Mind Field temple gate with red maple trees and a red ensō](docs/assets/temple-gate.webp)](https://corbett.vc/mindfield/)
+
+| Silent practice | Mindfield Maze |
+| --- | --- |
+| [![Silent-practice wall with eight numbered seats during a synthetic rehearsal](docs/assets/wall-poster.jpg)](https://corbett.vc/mindfield/) | [![Eight monk characters in the Mindfield Maze during a synthetic rehearsal](docs/assets/maze-poster.jpg)](https://corbett.vc/mindfield/) |
+
+These synthetic rehearsal previews show the original experience. Visit the
+[case study](https://corbett.vc/mindfield/) for the story and videos. Graphics are
+credited in [asset sources](docs/assets/README.md); this repository contains the
+reusable signal modules, not the full application.
+
+## Training screen walkthrough
+
+[**See every Training step, from setup through the Maze →**](docs/training-walkthrough.md)
+
+The gallery includes 11 screenshots of the actual `/training` interface, using
+synthetic session views and invented names. It shows setup, fit, Baseline, all
+three practices, the intervening breaks and the Maze.
+
+[![Training setup and complete journey sidebar](docs/assets/training/01-training-setup.png)](docs/training-walkthrough.md)
+
+### Headband fit and sensor connections
+
+[![Fit board showing good and poor ear connections, all four sensor lights, headband-off and reconnecting states](docs/assets/training/03-fit-sensors-detail.png)](docs/training-walkthrough.md#fit-test-good-and-poor-sensor-connections)
+
+TP9/TP10 are the ear sensors; AF7/AF8 are forehead sensors. Green pills show
+usable readings at this instant; red dashed pills show unusable readings.
+The ear meters summarize the rolling fit window. These are **synthetic UI
+examples**, not participant data or evidence of hardware validation.
+
 ## Guides
 
 - [Phone message format](docs/message-format.md): derived bands, quality, heartbeat and raw EEG layouts.
 - [Field notes](FIELD-NOTES.md): design lessons and evidence limits.
 - [Synthetic fixtures](fixtures/README.md): deliberate faults, expected behavior and reproducibility.
 - [Extraction record](docs/extraction.json): source revision and SHA-256 for each unchanged module.
-- [Review and release checklist](docs/review.md): decisions remaining before a public release.
+- [Release status](docs/review.md): publication scope and possible future work.
 
 ## Scope and limitations
 
@@ -121,5 +138,5 @@ the current extent of validation. See [field notes](FIELD-NOTES.md).
 Copyright 2026 Peter Corbett. Code and text documentation are licensed under the
 [Apache License, Version 2.0](LICENSE). Case study artwork and screenshots retain
 the separate terms in [asset sources](docs/assets/README.md). Third-party trademarks
-are not licensed by this project. The repository remains private for review, and
-`private: true` in the package metadata continues to prevent npm publication.
+are not licensed by this project. The repository is public; `private: true` in the
+package metadata prevents npm publication. Clone the repository to use this edition.

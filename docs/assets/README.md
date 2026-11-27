@@ -15,7 +15,7 @@ These illustrate the original experience; the toolkit does not include the full
 application or its presentation renderer. They are not participant recordings or
 validation evidence. These graphics and the Training screenshots below are not
 covered by the Apache-2.0 license for code and text documentation. No additional
-reuse license is granted by their inclusion. The repository remains private for review.
+reuse license is granted by their inclusion in this public repository.
 
 ## Training screenshots
 

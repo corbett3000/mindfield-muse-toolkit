@@ -5,10 +5,10 @@ Run `npm run check` for source or example changes. Keep the library free of I/O
 and third-party runtime dependencies unless explicitly requested otherwise.
 
 Code and text documentation use Apache-2.0, as selected by the owner to match
-OpenDNA. Preserve the license and copyright notice. This repository remains
-private for review; public visibility and npm publication require the owner’s
-explicit instruction. Use synthetic data
-only. Do not copy SDKs, recordings, reports, credentials or private source
+OpenDNA. Preserve the license and copyright notice. The owner authorized public
+repository visibility on November 27, 2026. npm publication still requires the
+owner’s explicit instruction; retain `private: true` in package.json. Use synthetic
+data only. Do not copy SDKs, recordings, reports, credentials or private source
 project documents into this repository. The owner approved the case study graphics and synthetic Training screenshots
 documented in docs/assets/README.md and docs/training-walkthrough.md; other media
 requires an explicit request. Keep source attribution with any approved graphics.

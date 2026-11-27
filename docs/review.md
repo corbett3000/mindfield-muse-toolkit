@@ -1,4 +1,4 @@
-# Private review and release status
+# Release status
 
 Created November 27, 2026 as a fresh repository for Tier 1. The four source modules
 are unchanged extractions; new documentation, small synthetic fixtures and tests
@@ -11,16 +11,27 @@ replaced by the standalone synthetic integration tests.
 The owner selected the same license as [OpenDNA](https://github.com/corbett3000/OpenDNA/blob/main/LICENSE):
 Apache License 2.0, with Copyright 2026 Peter Corbett. `LICENSE` copies that license
 text and `package.json` uses `Apache-2.0`. Code and text documentation are covered;
-[graphics retain their separate terms](assets/README.md). The repository remains
-private, and `private: true` continues to prevent npm publication.
+[graphics retain their separate terms](assets/README.md). `private: true` in
+package.json continues to prevent npm publication.
 
-## Before a public release
+## Public repository — November 27, 2026
 
-- Decide contribution/support expectations and a security-reporting contact.
-- Review the API and field notes, especially provisional validity thresholds,
-  stale quality flags, input validation responsibilities and evidence limits.
-- Confirm hosted CI passes and have another developer run the README from a clone.
-- Approve public visibility separately. No npm publication is configured.
+The owner authorized public visibility and search-discoverability improvements.
+The README introduces Muse EEG signal quality, headband fit checks, OSC packet-loss
+tracking and experimental neurofeedback games, with the quick start before the
+illustrated walkthrough. Repository topics describe the same supported scope.
+The case study remains linked at https://corbett.vc/mindfield/.
+
+This is a source repository, not an npm release or a release of the full Mind Field
+application. Code and text use Apache-2.0; graphics keep their separate terms.
+Tests use synthetic inputs. Consult the API and field notes for provisional
+thresholds, stale quality flags, input-validation responsibilities and evidence limits.
+
+## Maintenance follow-ups
+
+- Document contribution/support expectations and a security-reporting contact.
+- Collect independent developer feedback on the quick start and API.
+- Expand validation only when corresponding evidence is available.
 
 ## Optional later scope
 
