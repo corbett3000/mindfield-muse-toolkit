@@ -11,7 +11,7 @@ track missing packets, and turn a usable EEG-derived value into game movement.
 Synthetic EEG test data lets you try the toolkit without a headset.
 
 **Version 0.1.0 · Node.js 22+ · No runtime dependencies.** Code and text documentation are licensed under
-[Apache License 2.0](LICENSE), matching [OpenDNA](https://github.com/corbett3000/OpenDNA/blob/main/LICENSE).
+[Apache License 2.0](LICENSE).
 This is not the full Mind Field app, a Muse driver, or a medical device. The
 thresholds are provisional engineering choices, not validated clinical criteria.
 Muse is a trademark of Interaxon; this project is not affiliated with or endorsed
